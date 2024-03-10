@@ -154,7 +154,7 @@ struct NewTeachingView: View {
                     Image("FamilyBall")
                         .resizable()
                         .frame(width: 200, height: 300, alignment: .leading)
-                        .scaleEffect(2)
+                        .scaleEffect(2.2)
                         .offset(y:60)
                 }
                 .offset(y: 60)
@@ -220,6 +220,7 @@ struct NewTeachingView: View {
                         }
                     }
                     next_ += 1;
+                    print(selection)
                 }, label: {
                     ZStack {
                         RoundedRectangle(cornerRadius: 25)
